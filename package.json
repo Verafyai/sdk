@@ -1,6 +1,6 @@
 {
   "name": "@verafy/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript SDK for the Verafy public API: broadcast a query to a swarm of models, read validators, and check credits.",
   "license": "MIT",
   "type": "module",

@@ -166,12 +166,16 @@ The same API, inside Claude Code, Cursor, Codex and Gemini CLI.
   "mcpServers": {
     "verafy": {
       "command": "npx",
-      "args": ["-y", "@verafy/sdk/mcp"],
+      "args": ["-y", "--package=@verafy/sdk", "verafy-mcp"],
       "env": { "VERAFY_API_KEY": "..." }
     }
   }
 }
 ```
+
+`--package` is not optional. `npx @verafy/sdk/mcp` is read by npm as a path on
+disk, not as the package's `./mcp` export, and fails with ENOENT. The server is
+published as the `verafy-mcp` bin for exactly this reason.
 
 | Tool | |
 |---|---|
