@@ -2,7 +2,9 @@
 
 TypeScript SDK for the [Verafy](https://verafy.ai) public API. Broadcast a question to a swarm of language models and read back every vote, with the consensus and each model's reasoning.
 
-Zero runtime dependencies. Node 20+. MIT.
+The client has no runtime dependencies: it uses the platform's `fetch` and `AbortController` and nothing else. Node 20+. MIT.
+
+The MCP server is a separate entry point and needs `@modelcontextprotocol/sdk`, declared as an optional peer so a plain install of the client stays dependency-free.
 
 ```bash
 npm install @verafy/sdk

@@ -27,9 +27,15 @@
   },
   "devDependencies": {
     "@types/node": "22.10.2",
-    "typescript": "5.7.2"
+    "typescript": "5.7.2",
+    "@modelcontextprotocol/sdk": "1.12.1"
   },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.1"
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": ">=1.12.0"
+  },
+  "peerDependenciesMeta": {
+    "@modelcontextprotocol/sdk": {
+      "optional": true
+    }
   }
 }
